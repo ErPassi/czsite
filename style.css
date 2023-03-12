@@ -1,0 +1,29 @@
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(to bottom, #24201C, #5E6572);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Comfortaa', cursive;
+  color: #809C92;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  color: #6C848C;
+}
+
+a {
+  color: #DAB370;
+  text-decoration: none;
+  border-bottom: 2px solid #DAB370;
+  transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+  color: #24201C;
+  border-color: #24201C;
+}
