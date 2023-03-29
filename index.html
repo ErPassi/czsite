@@ -2,8 +2,102 @@
 <html>
 <head>
 	<title>ChillZone IT - Home</title>
-        <link rel="icon" href="https://tinypic.host/images/2023/03/10/discord.jpg" type="image/jgp">
+	<link rel="icon" href="https://tinypic.host/images/2023/03/10/discord.jpg" type="image/jgp">
 	<link rel="stylesheet" href="style.css">
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+		}
+		header {
+			background-color: #809C92;
+			color: white;
+			padding: 20px;
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			z-index: 1;
+		}
+		header h1 {
+			margin: 0;
+			font-size: 36px;
+			font-weight: normal;
+		}
+		nav ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			align-items: center;
+		}
+		nav li {
+			margin: 0 10px;
+		}
+		nav a {
+			color: white;
+			text-decoration: none;
+			font-size: 20px;
+		}
+		main {
+			margin-top: 100px;
+			padding: 20px;
+		}
+		.horizontal-section {
+			background-color: #DAB370;
+			position: relative;
+			height: 100vh;
+			width: 100%;
+			overflow: hidden;
+		}
+		.horizontal-section .overlay {
+			background-color: rgba(0, 0, 0, 0.3);
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			z-index: -1;
+			backdrop-filter: blur(10px);
+		}
+		.horizontal-section .content {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			text-align: center;
+			z-index: 1;
+		}
+		.horizontal-section h2 {
+			font-size: 48px;
+			color: #24201C;
+			margin: 0;
+		}
+		.horizontal-section p {
+			font-size: 24px;
+			color: #24201C;
+		}
+		.horizontal-section:before {
+			content: '';
+			display: inline-block;
+			height: 100%;
+			vertical-align: middle;
+		}
+		.horizontal-section p, .horizontal-section h2 {
+			display: inline-block;
+			vertical-align: middle;
+		}
+		footer {
+			background-color: #24201C;
+			color: white;
+			padding: 20px;
+			text-align: center;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+		}
+	</style>
 </head>
 <body>
 	<header>
@@ -12,19 +106,4 @@
 			<ul>
 				<li><a href="#">Home</a></li>
 				<li><a href="chi-siamo.html">Chi Siamo</a></li>
-				<li><a href="contatti.html">Contatti</a></li>
-			</ul>
-		</nav>
-	</header>
-	<main>
-		<section>
-			<h2>Benvenuti in ChillZone IT</h2>
-			<p>ChillZone IT è un'azienda giovane e dinamica che si occupa di sviluppo software e soluzioni IT personalizzate per le esigenze del cliente. Il nostro team di esperti è in grado di realizzare progetti di qualsiasi dimensione e complessità, sempre mettendo al primo posto la soddisfazione del cliente.</p>
-			<p>Scopri di più sui nostri servizi visitando le altre sezioni del sito!</p>
-		</section>
-	</main>
-	<footer>
-		<p>ChillZone IT - Via Roma 123, 00100 Roma</p>
-	</footer>
-</body>
-</html>
+				<li><a
